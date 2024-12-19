@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_login"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_login"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="372dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Masukkan Username"
+        android:inputType="text|textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_login"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="372dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Masukkan Password"
+        android:inputType="text|textWebPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="184dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_login"
+        app:srcCompat="@drawable/education__1_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
